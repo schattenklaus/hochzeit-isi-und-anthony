@@ -8617,3 +8617,11 @@ input, select, textarea {
   opacity: 1;
   pointer-events: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .gallery .caption {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important; /* Falls das Template Caption "rein slidet" */
+  }
+}

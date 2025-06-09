@@ -206,45 +206,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			  ...
-  <!-- Dein Touch-Workaround-Skript -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const articles = document.querySelectorAll('.gallery .thumb');
-
-    articles.forEach(article => {
-      const link = article.querySelector('a.image');
-      const caption = article.querySelector('.caption');
-
-      let tappedOnce = false;
-
-      article.addEventListener('click', function (e) {
-        if (window.innerWidth <= 768) {
-          if (!tappedOnce) {
-            e.preventDefault();
-            // Zeige Caption aktiv
-            articles.forEach(a => a.classList.remove('hovered'));
-            article.classList.add('hovered');
-            tappedOnce = true;
-            // Timeout zurücksetzen nach einigen Sekunden
-            setTimeout(() => { tappedOnce = false }, 2000);
-          } else {
-            // Beim zweiten Tap: Link normal öffnen
-            article.classList.remove('hovered');
-            tappedOnce = false;
-          }
-        }
-      });
-
-      // Außerhalb tippen: alle ausblenden
-      document.addEventListener('click', function (e) {
-        if (!article.contains(e.target)) {
-          article.classList.remove('hovered');
-          tappedOnce = false;
-        }
-      });
-    });
-  });
-</script>
 	</body>
 </html>
