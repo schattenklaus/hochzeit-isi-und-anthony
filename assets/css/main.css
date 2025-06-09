@@ -9,18 +9,6 @@
   visibility: visible;
 }
 
-.gallery .nav a.prev:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f104'; /* chevron-left */
-}
-
-.gallery .nav a.next:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f105'; /* chevron-right */
-}
-
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
@@ -6860,6 +6848,8 @@ input, select, textarea {
 		}
 
 			.gallery.style2 > .forward:before {
+				font-family: 'Font Awesome 5 Free';
+  				font-weight: 900;
 				content: '\f105';
 				right: 0;
 			}
@@ -6870,6 +6860,8 @@ input, select, textarea {
 		}
 
 			.gallery.style2 > .backward:before {
+				font-family: 'Font Awesome 5 Free';
+  				font-weight: 900;
 				content: '\f104';
 				left: 0;
 			}
