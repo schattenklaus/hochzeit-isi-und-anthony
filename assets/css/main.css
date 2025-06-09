@@ -9,6 +9,22 @@
   visibility: visible;
 }
 
+/* Lightbox-Navigation vollständig deaktivieren */
+body .lbox .nav,
+body .lbox .nav::before,
+body .lbox .nav::after,
+body .lbox .nav span,
+body .lbox .nav span::before,
+body .lbox .next,
+body .lbox .prev,
+body .lbox .next::before,
+body .lbox .prev::before {
+  display: none !important;
+  content: none !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
@@ -8619,18 +8635,3 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
-/* Lightbox-Navigation vollständig deaktivieren */
-body .lbox .nav,
-body .lbox .nav::before,
-body .lbox .nav::after,
-body .lbox .nav span,
-body .lbox .nav span::before,
-body .lbox .next,
-body .lbox .prev,
-body .lbox .next::before,
-body .lbox .prev::before {
-  display: none !important;
-  content: none !important;
-  pointer-events: none !important;
-  visibility: hidden !important;
-}
