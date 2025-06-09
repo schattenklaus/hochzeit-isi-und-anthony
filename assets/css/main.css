@@ -8604,3 +8604,16 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+/* Sichtbarkeit von Bildbeschriftungen auf Mobilgeräten */
+.thumb .caption {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.thumb.hovered .caption {
+  opacity: 1;
+  pointer-events: auto;
+}
