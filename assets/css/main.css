@@ -1,3 +1,13 @@
+/* Custom override to make gallery captions always visible */
+.gallery .caption {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.gallery a:hover .caption {
+  opacity: 1;
+  visibility: visible;
+}
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
