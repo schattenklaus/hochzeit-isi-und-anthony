@@ -9,12 +9,20 @@
   visibility: visible;
 }
 
-/* Hide gallery navigation arrows completely */
+/* Komplettes Entfernen der Galerie-Navigation inklusive Icons */
 .gallery .nav,
 .gallery .prev,
-.gallery .next {
+.gallery .next,
+.gallery .nav::before,
+.gallery .prev::before,
+.gallery .next::before,
+.gallery .nav span::before,
+.gallery .prev span::before,
+.gallery .next span::before {
   display: none !important;
+  content: none !important;
   pointer-events: none;
+  visibility: hidden !important;
 }
 
 @import url(fontawesome-all.min.css);
