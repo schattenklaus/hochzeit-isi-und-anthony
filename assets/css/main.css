@@ -9,31 +9,18 @@
   visibility: visible;
 }
 
-	.gallery.style2:hover > .forward, .gallery.style2:hover > .backward {
-			opacity: 1;
-		}
+.gallery .nav a.prev:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f104'; /* chevron-left */
+}
 
-		.gallery.style2 > .forward {
-			right: 0;
-			background-image: linear-gradient(to left, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
-		}
+.gallery .nav a.next:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f105'; /* chevron-right */
+}
 
-			.gallery.style2 > .forward:before {
-				content: '\f105';
-				right: 0;
-			}
-
-		.gallery.style2 > .backward {
-			left: 0;
-			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
-		}
-
-			.gallery.style2 > .backward:before {
-				content: '\f104';
-				left: 0;
-			}
-
-			
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
