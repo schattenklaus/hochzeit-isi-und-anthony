@@ -206,6 +206,32 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+   	 			document.addEventListener('DOMContentLoaded', function () {
+      			const thumbs = document.querySelectorAll('.thumb');
 
+      			thumbs.forEach(function (thumb) {
+        			thumb.addEventListener('click', function (e) {
+         				 if (window.innerWidth <= 768) {
+            				if (!thumb.classList.contains('hovered')) {
+            				  e.preventDefault();
+             				 document.querySelectorAll('.thumb').forEach(t => t.classList.remove('hovered'));
+             		 thumb.classList.add('hovered');
+            		} else {
+              		thumb.classList.remove('hovered');
+         			   }
+    						      }
+     							   });
+ 							     });
+
+   							   document.addEventListener('click', function (e) {
+      						  document.querySelectorAll('.thumb').forEach(function (thumb) {
+       					   if (!thumb.contains(e.target)) {
+     					      thumb.classList.remove('hovered');
+    					      }
+   					     });
+   					   });
+    				});
+  			</script>
 	</body>
 </html>
